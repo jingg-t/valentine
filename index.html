@@ -2,12 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>valentine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Basic boilerplate website" />
+    <title>Boilerplate Site</title>
+
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <header class="container">
+      <h1>Boilerplate Site</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Welcome</h2>
+        <p>This is a simple starter website.</p>
+        <button id="btn">Click me</button>
+        <p id="output"></p>
+      </section>
+    </main>
+
+    <footer class="container">
+      <small>© <span id="year"></span></small>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
