@@ -7,12 +7,11 @@ body {
   font-family: Gloria Hallelujah;
   line-height: 1.5;
   background-color: #ffb5e4;
-    overflow: hidden;
+  overflow: hidden;
   height: 100%;
+  width: 100%;
 
 }
-
-
 
 .container {
   margin: auto;
@@ -22,14 +21,8 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%;
-  margin-top: 60%;
+  padding-top: 45%;
 
-}
-
-.card {
-  border: 1px solid #000000;
-  border-radius: 12px;
-  padding: 20px; 
 }
 
 button {
@@ -42,14 +35,106 @@ button {
 #letter {
     width: 75%;
     display: flex;
+    
 }
 
 #clickMe {
     font-size: 1.5rem;
 }
-
 #note {
-    height: 284px;
-    display: none;
+  height: 284px;
+
 }
 
+
+
+.fade {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  margin-top: 20px;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.buttons {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 20%;
+    justify-content: center;
+}
+
+.btn { 
+    width: 150px;
+    display: block;
+    cursor: pointer;
+}
+
+#yesBtn {
+background-color: #7ef3d6;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Gloria Hallelujah;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#yesBtn:hover,
+#yesBtn:focus {
+  background-color: #F082AC;
+}
+
+
+#noBtn {
+background-color: #ea4c4c;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Gloria Hallelujah;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#noBtn:hover,
+#noBtn:focus {
+  background-color: #F082AC;
+}
