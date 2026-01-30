@@ -31,4 +31,10 @@ document.getElementById("noBtn").addEventListener("click", () => {
 })
 
 
+document.getElementById("yesBtn").addEventListener("click", () => {
+    document.getElementById("note").src = "assets/Lovenote.png";
+})
+
+
+
 
